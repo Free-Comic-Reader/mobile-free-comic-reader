@@ -6388,6 +6388,11 @@ unbox-primitive@^1.0.0:
     has-symbols "^1.0.2"
     which-boxed-primitive "^1.0.2"
 
+uncompress-react-native@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/uncompress-react-native/-/uncompress-react-native-1.0.2.tgz#4d2e3e38c3e4958261a4b30b0f078e6f12b833e2"
+  integrity sha512-Lp+AQKPlOKa9kcY1GBEICXH0DRie0pkxgym8IjbIP0LWp8ZYo3EIxkLOAUCqpZ7O0iITifr3J2O+0TRa/7ch2A==
+
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/unicode-canonical-property-names-ecmascript/-/unicode-canonical-property-names-ecmascript-1.0.4.tgz#2619800c4c825800efdd8343af7dd9933cbe2818"
