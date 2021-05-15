@@ -11,9 +11,9 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2CE450E1DD8E22B5C42479E9 /* libPods-FreeComicReader-FreeComicReaderTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1AF69B936E3A2530D3EEA06 /* libPods-FreeComicReader-FreeComicReaderTests.a */; };
+		21515B75A7E9ADEEA8D268FF /* Pods_FreeComicReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEA6A5C884E4AF1684D6E414 /* Pods_FreeComicReader.framework */; };
+		4B1A98A728B1B9F25B0222D3 /* Pods_FreeComicReader_FreeComicReaderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFDDF020FFA04FA982A1121C /* Pods_FreeComicReader_FreeComicReaderTests.framework */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		D13E454B51176E84133AC63A /* libPods-FreeComicReader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FDEDAF326453DAD7AE63DC5 /* libPods-FreeComicReader.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,14 +36,14 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = FreeComicReader/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = FreeComicReader/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = FreeComicReader/main.m; sourceTree = "<group>"; };
-		7FDEDAF326453DAD7AE63DC5 /* libPods-FreeComicReader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FreeComicReader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = FreeComicReader/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A88F0B62BABC06C31A116826 /* Pods-FreeComicReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeComicReader.release.xcconfig"; path = "Target Support Files/Pods-FreeComicReader/Pods-FreeComicReader.release.xcconfig"; sourceTree = "<group>"; };
+		AFDDF020FFA04FA982A1121C /* Pods_FreeComicReader_FreeComicReaderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeComicReader_FreeComicReaderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B104EE8A43B03721A9C3281C /* Pods-FreeComicReader-FreeComicReaderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeComicReader-FreeComicReaderTests.release.xcconfig"; path = "Target Support Files/Pods-FreeComicReader-FreeComicReaderTests/Pods-FreeComicReader-FreeComicReaderTests.release.xcconfig"; sourceTree = "<group>"; };
 		BB8B2E5B0B1C32D67CCA2E84 /* Pods-FreeComicReader-FreeComicReaderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeComicReader-FreeComicReaderTests.debug.xcconfig"; path = "Target Support Files/Pods-FreeComicReader-FreeComicReaderTests/Pods-FreeComicReader-FreeComicReaderTests.debug.xcconfig"; sourceTree = "<group>"; };
-		D1AF69B936E3A2530D3EEA06 /* libPods-FreeComicReader-FreeComicReaderTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FreeComicReader-FreeComicReaderTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3F25BEA33C0DF83895C487D /* Pods-FreeComicReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeComicReader.debug.xcconfig"; path = "Target Support Files/Pods-FreeComicReader/Pods-FreeComicReader.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		FEA6A5C884E4AF1684D6E414 /* Pods_FreeComicReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeComicReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CE450E1DD8E22B5C42479E9 /* libPods-FreeComicReader-FreeComicReaderTests.a in Frameworks */,
+				4B1A98A728B1B9F25B0222D3 /* Pods_FreeComicReader_FreeComicReaderTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D13E454B51176E84133AC63A /* libPods-FreeComicReader.a in Frameworks */,
+				21515B75A7E9ADEEA8D268FF /* Pods_FreeComicReader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,8 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				7FDEDAF326453DAD7AE63DC5 /* libPods-FreeComicReader.a */,
-				D1AF69B936E3A2530D3EEA06 /* libPods-FreeComicReader-FreeComicReaderTests.a */,
+				FEA6A5C884E4AF1684D6E414 /* Pods_FreeComicReader.framework */,
+				AFDDF020FFA04FA982A1121C /* Pods_FreeComicReader_FreeComicReaderTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -160,7 +160,7 @@
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				F0213230C24657A7F98AA0CD /* [CP] Copy Pods Resources */,
+				B76B4B46EFD64B9F80E2B3D0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -182,7 +182,7 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				A0E4F4E8F7A0741A25110796 /* [CP] Copy Pods Resources */,
+				18F0B51D713704751C51355D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -263,6 +263,23 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
+		18F0B51D713704751C51355D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FreeComicReader/Pods-FreeComicReader-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FreeComicReader/Pods-FreeComicReader-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FreeComicReader/Pods-FreeComicReader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		20BFA9580E0270664739681D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -307,38 +324,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A0E4F4E8F7A0741A25110796 /* [CP] Copy Pods Resources */ = {
+		B76B4B46EFD64B9F80E2B3D0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FreeComicReader/Pods-FreeComicReader-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-FreeComicReader-FreeComicReaderTests/Pods-FreeComicReader-FreeComicReaderTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FreeComicReader/Pods-FreeComicReader-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-FreeComicReader-FreeComicReaderTests/Pods-FreeComicReader-FreeComicReaderTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FreeComicReader/Pods-FreeComicReader-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F0213230C24657A7F98AA0CD /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FreeComicReader-FreeComicReaderTests/Pods-FreeComicReader-FreeComicReaderTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FreeComicReader-FreeComicReaderTests/Pods-FreeComicReader-FreeComicReaderTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FreeComicReader-FreeComicReaderTests/Pods-FreeComicReader-FreeComicReaderTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FreeComicReader-FreeComicReaderTests/Pods-FreeComicReader-FreeComicReaderTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
