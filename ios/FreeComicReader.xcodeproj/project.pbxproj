@@ -11,9 +11,9 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		2CE450E1DD8E22B5C42479E9 /* libPods-FreeComicReader-FreeComicReaderTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1AF69B936E3A2530D3EEA06 /* libPods-FreeComicReader-FreeComicReaderTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		ACAA9D7C91F2194D16C7DEF1 /* Pods_FreeComicReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB370902AABABD96E26C1D8B /* Pods_FreeComicReader.framework */; };
-		BA9B5E955D3893A4C24FB355 /* Pods_FreeComicReader_FreeComicReaderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC592A004D29D538F450AEC /* Pods_FreeComicReader_FreeComicReaderTests.framework */; };
+		D13E454B51176E84133AC63A /* libPods-FreeComicReader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FDEDAF326453DAD7AE63DC5 /* libPods-FreeComicReader.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,19 +30,19 @@
 		00E356EE1AD99517003FC87E /* FreeComicReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreeComicReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* FreeComicReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FreeComicReaderTests.m; sourceTree = "<group>"; };
-		103B075D78579AAB440AF6A2 /* Pods-FreeComicReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeComicReader.release.xcconfig"; path = "Target Support Files/Pods-FreeComicReader/Pods-FreeComicReader.release.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* FreeComicReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeComicReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = FreeComicReader/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = FreeComicReader/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = FreeComicReader/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = FreeComicReader/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = FreeComicReader/main.m; sourceTree = "<group>"; };
+		7FDEDAF326453DAD7AE63DC5 /* libPods-FreeComicReader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FreeComicReader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = FreeComicReader/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A12FEBDEC7828FFA98BBC30E /* Pods-FreeComicReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeComicReader.debug.xcconfig"; path = "Target Support Files/Pods-FreeComicReader/Pods-FreeComicReader.debug.xcconfig"; sourceTree = "<group>"; };
-		A3AB06870DAB8D9035536C44 /* Pods-FreeComicReader-FreeComicReaderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeComicReader-FreeComicReaderTests.debug.xcconfig"; path = "Target Support Files/Pods-FreeComicReader-FreeComicReaderTests/Pods-FreeComicReader-FreeComicReaderTests.debug.xcconfig"; sourceTree = "<group>"; };
-		AB370902AABABD96E26C1D8B /* Pods_FreeComicReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeComicReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA07998073EEB29078B2DE08 /* Pods-FreeComicReader-FreeComicReaderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeComicReader-FreeComicReaderTests.release.xcconfig"; path = "Target Support Files/Pods-FreeComicReader-FreeComicReaderTests/Pods-FreeComicReader-FreeComicReaderTests.release.xcconfig"; sourceTree = "<group>"; };
-		ECC592A004D29D538F450AEC /* Pods_FreeComicReader_FreeComicReaderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeComicReader_FreeComicReaderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A88F0B62BABC06C31A116826 /* Pods-FreeComicReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeComicReader.release.xcconfig"; path = "Target Support Files/Pods-FreeComicReader/Pods-FreeComicReader.release.xcconfig"; sourceTree = "<group>"; };
+		B104EE8A43B03721A9C3281C /* Pods-FreeComicReader-FreeComicReaderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeComicReader-FreeComicReaderTests.release.xcconfig"; path = "Target Support Files/Pods-FreeComicReader-FreeComicReaderTests/Pods-FreeComicReader-FreeComicReaderTests.release.xcconfig"; sourceTree = "<group>"; };
+		BB8B2E5B0B1C32D67CCA2E84 /* Pods-FreeComicReader-FreeComicReaderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeComicReader-FreeComicReaderTests.debug.xcconfig"; path = "Target Support Files/Pods-FreeComicReader-FreeComicReaderTests/Pods-FreeComicReader-FreeComicReaderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D1AF69B936E3A2530D3EEA06 /* libPods-FreeComicReader-FreeComicReaderTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FreeComicReader-FreeComicReaderTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3F25BEA33C0DF83895C487D /* Pods-FreeComicReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeComicReader.debug.xcconfig"; path = "Target Support Files/Pods-FreeComicReader/Pods-FreeComicReader.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -51,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA9B5E955D3893A4C24FB355 /* Pods_FreeComicReader_FreeComicReaderTests.framework in Frameworks */,
+				2CE450E1DD8E22B5C42479E9 /* libPods-FreeComicReader-FreeComicReaderTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACAA9D7C91F2194D16C7DEF1 /* Pods_FreeComicReader.framework in Frameworks */,
+				D13E454B51176E84133AC63A /* libPods-FreeComicReader.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,24 +96,12 @@
 			name = FreeComicReader;
 			sourceTree = "<group>";
 		};
-		219D978E560603883CD166E3 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A12FEBDEC7828FFA98BBC30E /* Pods-FreeComicReader.debug.xcconfig */,
-				103B075D78579AAB440AF6A2 /* Pods-FreeComicReader.release.xcconfig */,
-				A3AB06870DAB8D9035536C44 /* Pods-FreeComicReader-FreeComicReaderTests.debug.xcconfig */,
-				BA07998073EEB29078B2DE08 /* Pods-FreeComicReader-FreeComicReaderTests.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				AB370902AABABD96E26C1D8B /* Pods_FreeComicReader.framework */,
-				ECC592A004D29D538F450AEC /* Pods_FreeComicReader_FreeComicReaderTests.framework */,
+				7FDEDAF326453DAD7AE63DC5 /* libPods-FreeComicReader.a */,
+				D1AF69B936E3A2530D3EEA06 /* libPods-FreeComicReader-FreeComicReaderTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -133,7 +121,7 @@
 				00E356EF1AD99517003FC87E /* FreeComicReaderTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				219D978E560603883CD166E3 /* Pods */,
+				9F68C2D7E8F1BA85224B8CEB /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -149,6 +137,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		9F68C2D7E8F1BA85224B8CEB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D3F25BEA33C0DF83895C487D /* Pods-FreeComicReader.debug.xcconfig */,
+				A88F0B62BABC06C31A116826 /* Pods-FreeComicReader.release.xcconfig */,
+				BB8B2E5B0B1C32D67CCA2E84 /* Pods-FreeComicReader-FreeComicReaderTests.debug.xcconfig */,
+				B104EE8A43B03721A9C3281C /* Pods-FreeComicReader-FreeComicReaderTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,11 +156,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "FreeComicReaderTests" */;
 			buildPhases = (
-				C545101B2246CE2FB349A9FE /* [CP] Check Pods Manifest.lock */,
+				5E820437C74AD05086D7B3E8 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				8CE343908631B8208FFED322 /* [CP] Embed Pods Frameworks */,
+				F0213230C24657A7F98AA0CD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,13 +176,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "FreeComicReader" */;
 			buildPhases = (
-				9D477AFB567BC59F72E16DC9 /* [CP] Check Pods Manifest.lock */,
+				20BFA9580E0270664739681D /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				6D9B8E2AE2508ECA5CB6B9E1 /* [CP] Embed Pods Frameworks */,
+				A0E4F4E8F7A0741A25110796 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -263,41 +263,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		6D9B8E2AE2508ECA5CB6B9E1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FreeComicReader/Pods-FreeComicReader-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FreeComicReader/Pods-FreeComicReader-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FreeComicReader/Pods-FreeComicReader-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8CE343908631B8208FFED322 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FreeComicReader-FreeComicReaderTests/Pods-FreeComicReader-FreeComicReaderTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FreeComicReader-FreeComicReaderTests/Pods-FreeComicReader-FreeComicReaderTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FreeComicReader-FreeComicReaderTests/Pods-FreeComicReader-FreeComicReaderTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9D477AFB567BC59F72E16DC9 /* [CP] Check Pods Manifest.lock */ = {
+		20BFA9580E0270664739681D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -319,7 +285,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C545101B2246CE2FB349A9FE /* [CP] Check Pods Manifest.lock */ = {
+		5E820437C74AD05086D7B3E8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -339,6 +305,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0E4F4E8F7A0741A25110796 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FreeComicReader/Pods-FreeComicReader-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FreeComicReader/Pods-FreeComicReader-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FreeComicReader/Pods-FreeComicReader-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0213230C24657A7F98AA0CD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FreeComicReader-FreeComicReaderTests/Pods-FreeComicReader-FreeComicReaderTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FreeComicReader-FreeComicReaderTests/Pods-FreeComicReader-FreeComicReaderTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FreeComicReader-FreeComicReaderTests/Pods-FreeComicReader-FreeComicReaderTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -393,7 +393,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A3AB06870DAB8D9035536C44 /* Pods-FreeComicReader-FreeComicReaderTests.debug.xcconfig */;
+			baseConfigurationReference = BB8B2E5B0B1C32D67CCA2E84 /* Pods-FreeComicReader-FreeComicReaderTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -420,7 +420,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA07998073EEB29078B2DE08 /* Pods-FreeComicReader-FreeComicReaderTests.release.xcconfig */;
+			baseConfigurationReference = B104EE8A43B03721A9C3281C /* Pods-FreeComicReader-FreeComicReaderTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -444,7 +444,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A12FEBDEC7828FFA98BBC30E /* Pods-FreeComicReader.debug.xcconfig */;
+			baseConfigurationReference = D3F25BEA33C0DF83895C487D /* Pods-FreeComicReader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -470,7 +470,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 103B075D78579AAB440AF6A2 /* Pods-FreeComicReader.release.xcconfig */;
+			baseConfigurationReference = A88F0B62BABC06C31A116826 /* Pods-FreeComicReader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
