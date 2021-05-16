@@ -1,6 +1,6 @@
 import {FileManager} from '../../data/protocols/file-manager';
 
-export class ComicFileManager implements FileManager {
+class ComicFileManager implements FileManager {
   import(filePath: string): Promise<string> {
     throw new Error('Method not implemented.');
   }
@@ -8,3 +8,5 @@ export class ComicFileManager implements FileManager {
     throw new Error('Method not implemented.');
   }
 }
+
+export default ComicFileManager;

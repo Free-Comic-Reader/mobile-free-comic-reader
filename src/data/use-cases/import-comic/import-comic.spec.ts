@@ -1,5 +1,5 @@
-import {FileManagerSpy} from '../../test/file-manager-spy';
-import {LocalImportComicUseCase} from './local-import-comic';
+import FileManagerSpy from '../../test/file-manager-spy';
+import LocalImportComicUseCase from './local-import-comic';
 
 describe('Import Comic Use Case Test', () => {
   it('Should return comic if import sucessfull', async () => {

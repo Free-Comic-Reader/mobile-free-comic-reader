@@ -1,6 +1,6 @@
 import {FileManager} from '../protocols/file-manager';
 
-export class FileManagerSpy implements FileManager {
+class FileManagerSpy implements FileManager {
   importedFilePath: string = '';
   filePath?: string;
   files: string[] = [];
@@ -26,3 +26,5 @@ export class FileManagerSpy implements FileManager {
     return Promise.resolve(this.files);
   }
 }
+
+export default FileManagerSpy;
