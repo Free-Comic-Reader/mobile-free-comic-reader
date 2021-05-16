@@ -19,7 +19,6 @@ describe('Import Comic Use Case Test', () => {
 
   it('Generate file name even with the directory being the root path', async () => {
     const spyFileManager = new FileManagerSpy();
-    spyFileManager.importedFilePath = 'documents/comics/one_punch_man_001';
 
     const importComicUseCase = new LocalImportComicUseCase(spyFileManager);
     const comic = await importComicUseCase.import('one_punch_man_001.cbr');
@@ -28,8 +27,6 @@ describe('Import Comic Use Case Test', () => {
       name: 'one_punch_man_001',
       path: 'documents/comics/one_punch_man_001',
     });
-
-    expect(spyFileManager.filePath).toEqual('one_punch_man_001.cbr');
   });
 
   it('Throw error if import fail', async () => {
