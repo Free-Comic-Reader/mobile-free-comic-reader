@@ -7,7 +7,7 @@ describe('Import Comic Use Case Test', () => {
     spyFileManager.importedFilePath = 'documents/comics/one_punch_man';
 
     const importComicUseCase = new ImportComicUseCaseLocal(spyFileManager);
-    const comic = await importComicUseCase.import('test/one_punch_man.cbr');
+    const comic = await importComicUseCase.run('test/one_punch_man.cbr');
 
     expect(comic).toEqual({
       name: 'one_punch_man',
@@ -22,7 +22,7 @@ describe('Import Comic Use Case Test', () => {
     spyFileManager.importedFilePath = 'documents/comics/one_punch_man_001';
 
     const importComicUseCase = new ImportComicUseCaseLocal(spyFileManager);
-    const comic = await importComicUseCase.import('one_punch_man_001.cbr');
+    const comic = await importComicUseCase.run('one_punch_man_001.cbr');
 
     expect(comic).toEqual({
       name: 'one_punch_man_001',
@@ -37,7 +37,7 @@ describe('Import Comic Use Case Test', () => {
     const importComicUseCase = new ImportComicUseCaseLocal(spyFileManager);
 
     await expect(
-      importComicUseCase.import('test/one_punch_man.cbr'),
+      importComicUseCase.run('test/one_punch_man.cbr'),
     ).rejects.toEqual(Error('Simulation error'));
   });
 });

@@ -4,7 +4,7 @@ import {FileManager} from '../../protocols/file-manager';
 class ImportComicUseCaseLocal implements ImportComicUseCase {
   constructor(private fileManager: FileManager) {}
 
-  async import(filePath: string): Promise<ImportComicUseCase.ImportResult> {
+  async run(filePath: string): Promise<ImportComicUseCase.ImportResult> {
     const path = await this.fileManager.import(filePath);
     const name = this.getNameFrom(path);
 

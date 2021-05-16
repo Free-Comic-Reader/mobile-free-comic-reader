@@ -1,7 +1,7 @@
 import {Comic} from '../model/comic';
 
 export interface ImportComicUseCase {
-  import(filePath: string): Promise<ImportComicUseCase.ImportResult>;
+  run(filePath: string): Promise<ImportComicUseCase.ImportResult>;
 }
 
 export namespace ImportComicUseCase {
