@@ -1,12 +1,12 @@
 import FileManagerSpy from '../../test/file-manager-spy';
-import LocalImportComicUseCase from './local-import-comic';
+import ImportComicUseCaseLocal from './import-comic-local';
 
 describe('Import Comic Use Case Test', () => {
   it('Should return comic if import sucessfull', async () => {
     const spyFileManager = new FileManagerSpy();
     spyFileManager.importedFilePath = 'documents/comics/one_punch_man';
 
-    const importComicUseCase = new LocalImportComicUseCase(spyFileManager);
+    const importComicUseCase = new ImportComicUseCaseLocal(spyFileManager);
     const comic = await importComicUseCase.import('test/one_punch_man.cbr');
 
     expect(comic).toEqual({
@@ -21,7 +21,7 @@ describe('Import Comic Use Case Test', () => {
     const spyFileManager = new FileManagerSpy();
     spyFileManager.importedFilePath = 'documents/comics/one_punch_man_001';
 
-    const importComicUseCase = new LocalImportComicUseCase(spyFileManager);
+    const importComicUseCase = new ImportComicUseCaseLocal(spyFileManager);
     const comic = await importComicUseCase.import('one_punch_man_001.cbr');
 
     expect(comic).toEqual({
@@ -34,7 +34,7 @@ describe('Import Comic Use Case Test', () => {
     const spyFileManager = new FileManagerSpy();
     spyFileManager.error = new Error('Simulation error');
 
-    const importComicUseCase = new LocalImportComicUseCase(spyFileManager);
+    const importComicUseCase = new ImportComicUseCaseLocal(spyFileManager);
 
     await expect(
       importComicUseCase.import('test/one_punch_man.cbr'),

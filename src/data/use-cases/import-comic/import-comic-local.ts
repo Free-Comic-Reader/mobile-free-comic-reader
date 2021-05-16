@@ -1,7 +1,7 @@
 import {ImportComicUseCase} from '../../../domain/use-cases/import-comic-use-case';
 import {FileManager} from '../../protocols/file-manager';
 
-class LocalImportComicUseCase implements ImportComicUseCase {
+class ImportComicUseCaseLocal implements ImportComicUseCase {
   constructor(private fileManager: FileManager) {}
 
   async import(filePath: string): Promise<ImportComicUseCase.ImportResult> {
@@ -25,4 +25,4 @@ class LocalImportComicUseCase implements ImportComicUseCase {
   }
 }
 
-export default LocalImportComicUseCase;
+export default ImportComicUseCaseLocal;
