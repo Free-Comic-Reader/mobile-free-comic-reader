@@ -6,7 +6,7 @@ export class FileManagerSpy implements FileManager {
   files: string[] = [];
   error?: Error;
 
-  import({filePath}: FileManager.ImportParams): Promise<string> {
+  import(filePath: string): Promise<string> {
     this.filePath = filePath;
 
     if (this.error) {
@@ -16,7 +16,7 @@ export class FileManagerSpy implements FileManager {
     return Promise.resolve(this.importedFilePath);
   }
 
-  open({filePath}: FileManager.OpenParams): Promise<string[]> {
+  open(filePath: string): Promise<string[]> {
     this.filePath = filePath;
 
     if (this.error) {

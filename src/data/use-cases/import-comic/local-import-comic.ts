@@ -5,7 +5,7 @@ export class LocalImportComicUseCase implements ImportComicUseCase {
   constructor(private fileManager: FileManager) {}
 
   async import(filePath: string): Promise<ImportComicUseCase.ImportResult> {
-    const path = await this.fileManager.import({filePath});
+    const path = await this.fileManager.import(filePath);
     const name = this.getNameFrom(path);
 
     return {

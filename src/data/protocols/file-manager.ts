@@ -1,12 +1,4 @@
 export interface FileManager {
-  import({filePath}: FileManager.ImportParams): Promise<string>;
-  open({filePath}: FileManager.OpenParams): Promise<string[]>;
-}
-
-export namespace FileManager {
-  export type ImportParams = {
-    filePath: string;
-  };
-
-  export type OpenParams = Pick<ImportParams, 'filePath'>;
+  import(filePath: string): Promise<string>;
+  open(filePath: string): Promise<string[]>;
 }
