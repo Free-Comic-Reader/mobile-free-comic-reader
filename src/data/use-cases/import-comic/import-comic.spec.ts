@@ -19,6 +19,7 @@ describe('Import Comic Use Case Test', () => {
 
   it('Generate file name even with the directory being the root path', async () => {
     const spyFileManager = new FileManagerSpy();
+    spyFileManager.importedFilePath = 'documents/comics/one_punch_man_001';
 
     const importComicUseCase = new LocalImportComicUseCase(spyFileManager);
     const comic = await importComicUseCase.import('one_punch_man_001.cbr');
