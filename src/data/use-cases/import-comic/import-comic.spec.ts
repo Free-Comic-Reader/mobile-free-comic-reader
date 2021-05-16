@@ -2,7 +2,7 @@ import {FileManagerSpy} from '../../test/file-manager-spy';
 import {LocalImportComicUseCase} from './local-import-comic';
 
 describe('Import Comic Use Case Test', () => {
-  it('Import comic if import sucessfull', async () => {
+  it('Should return comic if import sucessfull', async () => {
     const spyFileManager = new FileManagerSpy();
     spyFileManager.importedFilePath = 'documents/comics/one_punch_man';
 
@@ -17,11 +17,11 @@ describe('Import Comic Use Case Test', () => {
     expect(spyFileManager.filePath).toEqual('test/one_punch_man.cbr');
   });
 
-  it('Throw error if import comic fail', async () => {
-    const spyDecompress = new FileManagerSpy();
-    spyDecompress.error = new Error('Simulation error');
+  it('Throw error if import fail', async () => {
+    const spyFileManager = new FileManagerSpy();
+    spyFileManager.error = new Error('Simulation error');
 
-    const importComicUseCase = new LocalImportComicUseCase(spyDecompress);
+    const importComicUseCase = new LocalImportComicUseCase(spyFileManager);
 
     await expect(
       importComicUseCase.import('test/one_punch_man.cbr'),
