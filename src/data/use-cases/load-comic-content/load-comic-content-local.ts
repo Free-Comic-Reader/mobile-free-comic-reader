@@ -2,17 +2,17 @@ import {Comic} from '../../../domain/model/comic';
 import {FileManager} from '../../protocols/file-manager';
 
 interface LoadComicContentUseCase {
-  run(param: LoadComicContentUseCase.Param): Promise<string[]>;
+  run(params: LoadComicContentUseCase.Params): Promise<string[]>;
 }
 
 export namespace LoadComicContentUseCase {
-  export type Param = Pick<Comic, 'filePath'>;
+  export type Params = Pick<Comic, 'filePath'>;
 }
 
 class LoadComicContentUseCaseLocal implements LoadComicContentUseCase {
   constructor(private fileManager: FileManager) {}
 
-  async run(param: LoadComicContentUseCase.Param): Promise<string[]> {
+  async run(param: LoadComicContentUseCase.Params): Promise<string[]> {
     return this.fileManager.open(param.filePath);
   }
 }

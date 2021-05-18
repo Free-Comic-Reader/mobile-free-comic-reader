@@ -9,9 +9,9 @@ class ImportComicUseCaseLocal implements ImportComicUseCase {
   ) {}
 
   async run(
-    param: ImportComicUseCase.Param,
+    params: ImportComicUseCase.Params,
   ): Promise<ImportComicUseCase.Response> {
-    const filePath = await this.fileManager.import(param.filePath);
+    const filePath = await this.fileManager.import(params.filePath);
     const name = this.getNameFrom(filePath);
     const comic = await this.comicRepository.create({
       name,
