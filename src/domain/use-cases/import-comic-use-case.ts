@@ -1,9 +1,10 @@
 import {Comic} from '../model/comic';
 
 export interface ImportComicUseCase {
-  run(filePath: string): Promise<ImportComicUseCase.ImportResult>;
+  run(param: ImportComicUseCase.Param): Promise<ImportComicUseCase.Response>;
 }
 
 export namespace ImportComicUseCase {
-  export type ImportResult = Comic;
+  export type Param = {filePath: string};
+  export type Response = Comic;
 }

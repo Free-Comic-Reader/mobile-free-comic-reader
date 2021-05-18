@@ -8,12 +8,14 @@ class ImportComicUseCaseLocal implements ImportComicUseCase {
     private comicRepository: ComicRepository,
   ) {}
 
-  async run(filePath: string): Promise<ImportComicUseCase.ImportResult> {
-    const path = await this.fileManager.import(filePath);
-    const name = this.getNameFrom(path);
+  async run(
+    param: ImportComicUseCase.Param,
+  ): Promise<ImportComicUseCase.Response> {
+    const filePath = await this.fileManager.import(param.filePath);
+    const name = this.getNameFrom(filePath);
     const comic = await this.comicRepository.create({
       name,
-      path,
+      filePath,
     });
 
     return comic;

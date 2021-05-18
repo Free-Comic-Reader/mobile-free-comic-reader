@@ -13,16 +13,19 @@ describe('Import Comic Use Case Test', () => {
       fileManagerSpy,
       comicRepositorySpy,
     );
-    const comic = await importComicUseCase.run('test/one_punch_man.cbr');
+
+    const comic = await importComicUseCase.run({
+      filePath: 'test/one_punch_man.cbr',
+    });
 
     expect(comic).toEqual({
       name: 'one_punch_man',
-      path: 'documents/comics/one_punch_man',
+      filePath: 'documents/comics/one_punch_man',
     });
 
     expect(comicRepositorySpy.comic).toEqual({
       name: 'one_punch_man',
-      path: 'documents/comics/one_punch_man',
+      filePath: 'documents/comics/one_punch_man',
     });
 
     expect(fileManagerSpy.filePath).toEqual('test/one_punch_man.cbr');
@@ -39,11 +42,13 @@ describe('Import Comic Use Case Test', () => {
       comicRepositorySpy,
     );
 
-    const comic = await importComicUseCase.run('one_punch_man_001.cbr');
+    const comic = await importComicUseCase.run({
+      filePath: 'one_punch_man_001.cbr',
+    });
 
     expect(comic).toEqual({
       name: 'one_punch_man_001',
-      path: 'documents/comics/one_punch_man_001',
+      filePath: 'documents/comics/one_punch_man_001',
     });
   });
 
@@ -59,7 +64,7 @@ describe('Import Comic Use Case Test', () => {
     );
 
     await expect(
-      importComicUseCase.run('test/one_punch_man.cbr'),
+      importComicUseCase.run({filePath: 'test/one_punch_man.cbr'}),
     ).rejects.toEqual(Error('Simulation error'));
   });
 
@@ -74,7 +79,7 @@ describe('Import Comic Use Case Test', () => {
     );
 
     await expect(
-      importComicUseCase.run('test/one_punch_man.cbr'),
+      importComicUseCase.run({filePath: 'test/one_punch_man.cbr'}),
     ).rejects.toEqual(Error('Repository simulation error'));
   });
 });
