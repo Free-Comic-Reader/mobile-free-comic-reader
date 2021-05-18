@@ -1,13 +1,5 @@
-import {Comic} from '../../../domain/model/comic';
+import {LoadComicContentUseCase} from '../../../domain/use-cases/load-comic-content-use-case';
 import {FileManager} from '../../protocols/file-manager';
-
-interface LoadComicContentUseCase {
-  run(params: LoadComicContentUseCase.Params): Promise<string[]>;
-}
-
-export namespace LoadComicContentUseCase {
-  export type Params = Pick<Comic, 'filePath'>;
-}
 
 class LoadComicContentUseCaseLocal implements LoadComicContentUseCase {
   constructor(private fileManager: FileManager) {}
