@@ -1,11 +1,11 @@
+import {CreateComicRepository} from '../../../domain/repository/comic/create-comic-repository';
 import {ImportComicUseCase} from '../../../domain/use-cases/import-comic-use-case';
 import {FileManager} from '../../protocols/file-manager';
-import {ComicRepository} from '../../../domain/repository/comic-repository';
 
 class ImportComicUseCaseLocal implements ImportComicUseCase {
   constructor(
-    private fileManager: FileManager,
-    private comicRepository: ComicRepository,
+    private readonly fileManager: FileManager,
+    private readonly createComicRepository: CreateComicRepository,
   ) {}
 
   async run(
@@ -13,7 +13,7 @@ class ImportComicUseCaseLocal implements ImportComicUseCase {
   ): Promise<ImportComicUseCase.Response> {
     const filePath = await this.fileManager.import(params.filePath);
     const name = this.getNameFrom(filePath);
-    const comic = await this.comicRepository.create({
+    const comic = await this.createComicRepository.createComic({
       name,
       filePath,
     });

@@ -1,5 +1,5 @@
 export interface Comic {
-  id?: string;
+  id: string;
   name: string;
   filePath: string;
 }
