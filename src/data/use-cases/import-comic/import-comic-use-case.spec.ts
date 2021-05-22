@@ -2,7 +2,7 @@ import CreateComicRepositorySpy from '../../test/create-comic-repository-spy';
 import FileManagerSpy from '../../test/file-manager-spy';
 import ImportComicUseCaseLocal from './import-comic-use-case-local';
 
-describe('Import Comic Use Case Test', () => {
+describe('Import comic use case test', () => {
   it('Should return comic if import sucessfull', async () => {
     const fileManagerSpy = new FileManagerSpy();
     fileManagerSpy.importedFilePath = 'documents/comics/one_punch_man';

@@ -1,7 +1,7 @@
 import FileManagerSpy from '../../test/file-manager-spy';
 import LoadComicContentUseCaseLocal from './load-comic-content-use-case-local';
 
-describe('Load Comic Content Use Case Test', () => {
+describe('Load comic content use case test', () => {
   it('Should return files load successful', async () => {
     const fileManagerSpy = new FileManagerSpy();
     fileManagerSpy.files = ['file://temp/file.jpg'];
