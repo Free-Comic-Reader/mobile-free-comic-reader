@@ -1,6 +1,6 @@
 import CreateComicRepositorySpy from '../../test/create-comic-repository-spy';
 import FileManagerSpy from '../../test/file-manager-spy';
-import ImportComicUseCaseLocal from './import-comic-local';
+import ImportComicUseCaseLocal from './import-comic-use-case-local';
 
 describe('Import Comic Use Case Test', () => {
   it('Should return comic if import sucessfull', async () => {

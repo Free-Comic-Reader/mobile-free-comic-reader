@@ -5,5 +5,8 @@ export interface LoadComicsRepository {
 }
 
 export namespace LoadComicsRepository {
-  export type Result = Comic[];
+  export type Result = {
+    lastSeen: Comic[];
+    comics: Comic[];
+  };
 }

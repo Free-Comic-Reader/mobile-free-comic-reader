@@ -1,5 +1,5 @@
 import FileManagerSpy from '../../test/file-manager-spy';
-import LoadComicContentUseCaseLocal from './load-comic-content-local';
+import LoadComicContentUseCaseLocal from './load-comic-content-use-case-local';
 
 describe('Load Comic Content Use Case Test', () => {
   it('Should return files load successful', async () => {
