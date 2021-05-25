@@ -1,22 +1,5 @@
-import {Comic} from '../../../domain/model/comic';
-import {DeleteComicRepository} from '../../../domain/repository/comic/delete-comic-repository';
 import DeleteComicRepositorySpy from '../../test/delete-comic-repository-spy';
-
-export interface DeleteComicUseCase {
-  run(params: DeleteComicUseCase.Params): Promise<void>;
-}
-
-export namespace DeleteComicUseCase {
-  export type Params = Pick<Comic, 'id'>;
-}
-
-class DeleteComicUseCaseLocal implements DeleteComicUseCase {
-  constructor(private repository: DeleteComicRepository) {}
-
-  run(params: DeleteComicUseCase.Params): Promise<void> {
-    return this.repository.deleteComic(params);
-  }
-}
+import DeleteComicUseCaseLocal from './delete-comic-use-case-local';
 
 describe('Delete comic use case', () => {
   it('Delete comic if successful', async () => {
