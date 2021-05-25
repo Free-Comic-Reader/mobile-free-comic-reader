@@ -1,7 +1,7 @@
 import LoadComicsRepositorySpy from '../../test/load-comics-repository-spy';
 import LoadComicsUseCaseLocal from './load-comics-use-case-local';
 
-describe('Load Comics Use Case Test', () => {
+describe('Load comics use case test', () => {
   it('Should return comics if successful', async () => {
     const repositorySpy = new LoadComicsRepositorySpy();
     repositorySpy.result = {
