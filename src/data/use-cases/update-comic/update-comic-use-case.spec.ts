@@ -8,6 +8,7 @@ describe('Update comic use case test', () => {
       id: 'aa22',
       filePath: 'temp/comics/dororo',
       name: 'Dororo',
+      lastPageSeen: 3,
     };
 
     const useCase = new UpdateComicUseCaseLocal(repositorySpy);
@@ -21,6 +22,7 @@ describe('Update comic use case test', () => {
       id: 'aa22',
       filePath: 'temp/comics/dororo',
       name: 'Dororo',
+      lastPageSeen: 3,
     });
   });
 
