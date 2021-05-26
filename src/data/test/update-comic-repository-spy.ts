@@ -14,7 +14,7 @@ class UpdateComicRepositorySpy implements UpdateComicRepository {
     }
 
     if (this.result) {
-      return Promise.resolve(this.result);
+      return Promise.resolve({...this.result, ...params});
     } else {
       return Promise.reject(new Error('Update comic error'));
     }

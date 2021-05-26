@@ -6,9 +6,8 @@ describe('Update comic use case test', () => {
     const repositorySpy = new UpdateComicRepositorySpy();
     repositorySpy.result = {
       id: 'aa22',
-      filePath: 'temp/comics/dororo',
-      name: 'Dororo',
-      lastPageSeen: 3,
+      filePath: 'temp/comics/one_punch_man',
+      name: 'One Punch Man',
     };
 
     const useCase = new UpdateComicUseCaseLocal(repositorySpy);
@@ -19,10 +18,9 @@ describe('Update comic use case test', () => {
     });
 
     expect(updatedComic).toEqual({
-      id: 'aa22',
       filePath: 'temp/comics/dororo',
+      id: 'aa22',
       name: 'Dororo',
-      lastPageSeen: 3,
     });
   });
 
