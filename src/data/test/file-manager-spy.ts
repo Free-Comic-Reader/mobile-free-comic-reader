@@ -5,6 +5,7 @@ class FileManagerSpy implements FileManager {
   filePath?: string;
   files: string[] = [];
   error?: Error;
+  size?: number;
 
   import(filePath: string): Promise<string> {
     this.filePath = filePath;
@@ -24,6 +25,18 @@ class FileManagerSpy implements FileManager {
     }
 
     return Promise.resolve(this.files);
+  }
+
+  storedSize(): Promise<number> {
+    if (this.error) {
+      return Promise.reject(this.error);
+    }
+
+    if (this.size) {
+      return Promise.resolve(this.size);
+    } else {
+      return Promise.reject(new Error('Simulation Error'));
+    }
   }
 }
 
