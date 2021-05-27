@@ -1,17 +1,5 @@
-import {FileManager} from '../../protocols/file-manager';
 import FileManagerSpy from '../../test/file-manager-spy';
-
-export interface CalculateStoredSizeUseCase {
-  run(): Promise<number>;
-}
-
-class CalculateStoredSizeUseCaseLocal implements CalculateStoredSizeUseCase {
-  constructor(private fileManager: FileManager) {}
-
-  run(): Promise<number> {
-    return this.fileManager.storedSize();
-  }
-}
+import CalculateStoredSizeUseCaseLocal from './calculate-stored-size-use-case-local';
 
 describe('Calculate stored size use case', () => {
   it('Return total stored size if successful', async () => {
