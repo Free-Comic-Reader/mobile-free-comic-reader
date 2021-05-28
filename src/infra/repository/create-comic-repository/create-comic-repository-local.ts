@@ -1,6 +1,6 @@
-import {Comic} from '../../domain/model/comic';
-import {CreateComicRepository} from '../../domain/repository/comic/create-comic-repository';
-import {Database} from '../../data/protocols/database';
+import {Comic} from '../../../domain/model/comic';
+import {CreateComicRepository} from '../../../domain/repository/comic/create-comic-repository';
+import {Database} from '../../../data/protocols/database';
 
 class CreateComicRepositoryLocal implements CreateComicRepository {
   private table = 'comic';
