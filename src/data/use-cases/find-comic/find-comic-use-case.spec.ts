@@ -1,52 +1,5 @@
-import {Comic} from '../../../domain/model/comic';
-
-export interface FindComicRepository {
-  find(params: FindComicRepository.Params): Promise<FindComicRepository.Result>;
-}
-
-export namespace FindComicRepository {
-  export type Params = {title: string};
-  export type Result = Comic[];
-}
-
-class FindComicRepositorySpy implements FindComicRepository {
-  error?: Error;
-  params?: FindComicRepository.Params;
-  result?: FindComicRepository.Result;
-
-  async find(
-    params: FindComicRepository.Params,
-  ): Promise<FindComicRepository.Result> {
-    this.params = params;
-
-    if (this.error) {
-      return Promise.reject(this.error);
-    }
-
-    if (this.result) {
-      return Promise.resolve(this.result);
-    } else {
-      return Promise.reject(new Error('Simulation error'));
-    }
-  }
-}
-
-export interface FindComicUseCase {
-  run(params: FindComicUseCase.Params): Promise<FindComicUseCase.Result>;
-}
-
-export namespace FindComicUseCase {
-  export type Params = {title: string};
-  export type Result = Comic[];
-}
-
-class FindComicUseCaseLocal implements FindComicUseCase {
-  constructor(private repository: FindComicRepository) {}
-
-  run(params: FindComicUseCase.Params): Promise<FindComicUseCase.Result> {
-    return this.repository.find(params);
-  }
-}
+import FindComicRepositorySpy from '../../test/find-comic-repository-spy';
+import FindComicUseCaseLocal from './find-comic-use-case-local';
 
 describe('Find comic use case', () => {
   it('Should return comics if find successful', async () => {
@@ -66,7 +19,14 @@ describe('Find comic use case', () => {
     ]);
   });
 
-  it('Should return empty result if find not matching', () => {});
+  it('Thow error if find fail', async () => {
+    const repository = new FindComicRepositorySpy();
+    repository.error = new Error('Simulation error');
 
-  it('Thow error if find fail', () => {});
+    const useCase = new FindComicUseCaseLocal(repository);
+
+    await expect(useCase.run({title: 'any'})).rejects.toEqual(
+      Error('Simulation error'),
+    );
+  });
 });
