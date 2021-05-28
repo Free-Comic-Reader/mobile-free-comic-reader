@@ -10,6 +10,9 @@ PODS:
     - React-jsi (= 0.64.0)
     - ReactCommon/turbomodule/core (= 0.64.0)
   - glog (0.3.5)
+  - MMKV (1.2.7):
+    - MMKVCore (~> 1.2.7)
+  - MMKVCore (1.2.9)
   - RCT-Folly (2020.01.13.00):
     - boost-for-react-native
     - DoubleConversion
@@ -203,6 +206,9 @@ PODS:
     - React-jsi (= 0.64.0)
     - React-perflogger (= 0.64.0)
   - React-jsinspector (0.64.0)
+  - react-native-mmkv-storage (0.5.9):
+    - MMKV (= 1.2.7)
+    - React-Core
   - React-perflogger (0.64.0)
   - React-RCTActionSheet (0.64.0):
     - React-Core/RCTActionSheetHeaders (= 0.64.0)
@@ -295,6 +301,7 @@ DEPENDENCIES:
   - React-jsi (from `../node_modules/react-native/ReactCommon/jsi`)
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
+  - react-native-mmkv-storage (from `../node_modules/react-native-mmkv-storage`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../node_modules/react-native/Libraries/NativeAnimation`)
@@ -313,6 +320,8 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - boost-for-react-native
+    - MMKV
+    - MMKVCore
     - SSZipArchive
     - UnrarKit
 
@@ -347,6 +356,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsiexecutor"
   React-jsinspector:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
+  react-native-mmkv-storage:
+    :path: "../node_modules/react-native-mmkv-storage"
   React-perflogger:
     :path: "../node_modules/react-native/ReactCommon/reactperflogger"
   React-RCTActionSheet:
@@ -382,6 +393,8 @@ SPEC CHECKSUMS:
   FBLazyVector: 49cbe4b43e445b06bf29199b6ad2057649e4c8f5
   FBReactNativeSpec: 905768819da95e2f0c33494c569652671be75e76
   glog: 73c2498ac6884b13ede40eda8228cb1eee9d9d62
+  MMKV: 22e5136f7d00197bc0fc9694b7f71519f0d1ca12
+  MMKVCore: 27bf04f4376305c9c0187136a7b58a236ee83f9e
   RCT-Folly: ec7a233ccc97cc556cf7237f0db1ff65b986f27c
   RCTRequired: 2f8cb5b7533219bf4218a045f92768129cf7050a
   RCTTypeSafety: 512728b73549e72ad7330b92f3d42936f2a4de5b
@@ -393,6 +406,7 @@ SPEC CHECKSUMS:
   React-jsi: 74341196d9547cbcbcfa4b3bbbf03af56431d5a1
   React-jsiexecutor: 06a9c77b56902ae7ffcdd7a4905f664adc5d237b
   React-jsinspector: 0ae35a37b20d5e031eb020a69cc5afdbd6406301
+  react-native-mmkv-storage: 322c013a1f67857c260dde0d19edde62e1372078
   React-perflogger: 9c547d8f06b9bf00cb447f2b75e8d7f19b7e02af
   React-RCTActionSheet: 3080b6e12e0e1a5b313c8c0050699b5c794a1b11
   React-RCTAnimation: 3f96f21a497ae7dabf4d2f150ee43f906aaf516f
@@ -410,6 +424,6 @@ SPEC CHECKSUMS:
   UnrarKit: 99e3f0222a98a212188e1a6975dcf5aa798d26dd
   Yoga: 8c8436d4171c87504c648ae23b1d81242bdf3bbf
 
-PODFILE CHECKSUM: 8bbf2e8018c7f86218d6acb3e134d1d7f45b23ab
+PODFILE CHECKSUM: 0624dfee43061cf14c871a711b13f8d46ee5b687
 
 COCOAPODS: 1.10.1
