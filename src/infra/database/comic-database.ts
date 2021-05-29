@@ -20,6 +20,10 @@ class ComicDatabase implements Database {
   async find<T extends Object>(query: Object | string): Promise<T[]> {
     return [];
   }
+
+  async exists(identifier: string): Promise<Boolean> {
+    return false;
+  }
 }
 
 export default ComicDatabase;

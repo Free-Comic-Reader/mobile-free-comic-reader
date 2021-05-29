@@ -74,6 +74,16 @@ class ComicDatabaseSpy implements Database {
 
     return Promise.reject(new Error('Result not implemented.'));
   }
+
+  async exists(identifier: string): Promise<Boolean> {
+    this.identifier = identifier;
+
+    if (this.error) {
+      return Promise.reject(this.error);
+    }
+
+    return this.result ?? false;
+  }
 }
 
 export default ComicDatabaseSpy;
