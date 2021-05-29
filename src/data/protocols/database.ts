@@ -1,9 +1,7 @@
 export interface Database {
-  create<T, R>(data: T, database: string): Promise<R>;
-  update<T, R>(identifier: string, data: T, database: string): Promise<R>;
-  delete(identifier: string, database: string): Promise<void>;
-  get<T>(identifier: string, database: string): Promise<T | null>;
-  find<T>(query: object, database: string): Promise<T[]>;
+  create<T>(identifier: string, data: Object): Promise<T>;
+  update<T>(identifier: string, data: Object): Promise<T>;
+  delete(identifier: string): Promise<void>;
+  get<T extends Object>(identifier: string): Promise<T | null>;
+  find<T extends Object>(query: Object | string): Promise<T[]>;
 }
-
-export namespace Database {}

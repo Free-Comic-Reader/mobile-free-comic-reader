@@ -1,32 +1,15 @@
 import {Database} from '../../data/protocols/database';
 
-class DatabaseSpy implements Database {
+class ComicDatabaseSpy implements Database {
   identifier?: string;
-  query?: object;
-  database?: string;
-  data?: any;
+  query?: string | Object;
+  data?: Object;
   result?: any;
   error?: Error;
 
-  create<T, R>(data: T, database: string): Promise<R> {
-    this.data = data;
-    this.database = database;
-
-    if (this.error) {
-      return Promise.reject(this.error);
-    }
-
-    if (this.result) {
-      return Promise.resolve(this.result);
-    } else {
-      return Promise.reject(new Error('Simulation error'));
-    }
-  }
-
-  update<T, R>(identifier: string, data: T, database: string): Promise<R> {
+  create<T>(identifier: string, data: Object): Promise<T> {
     this.identifier = identifier;
     this.data = data;
-    this.database = database;
 
     if (this.error) {
       return Promise.reject(this.error);
@@ -34,25 +17,14 @@ class DatabaseSpy implements Database {
 
     if (this.result) {
       return Promise.resolve(this.result);
-    } else {
-      return Promise.reject(new Error('Simulation error'));
-    }
-  }
-
-  delete(identifier: string, database: string): Promise<void> {
-    this.identifier = identifier;
-    this.database = database;
-
-    if (this.error) {
-      return Promise.reject(this.error);
     }
 
-    return Promise.resolve();
+    return Promise.reject(new Error('Result not implemented.'));
   }
 
-  get<T>(identifier: string, database: string): Promise<T | null> {
+  update<T>(identifier: string, data: Object): Promise<T> {
     this.identifier = identifier;
-    this.database = database;
+    this.data = data;
 
     if (this.error) {
       return Promise.reject(this.error);
@@ -60,14 +32,37 @@ class DatabaseSpy implements Database {
 
     if (this.result) {
       return Promise.resolve(this.result);
-    } else {
-      return Promise.reject(new Error('Simulation error'));
     }
+
+    return Promise.reject(new Error('Result not implemented.'));
   }
 
-  find<T>(query: object, database: string): Promise<T[]> {
+  delete(identifier: string): Promise<void> {
+    this.identifier = identifier;
+
+    if (this.error) {
+      return Promise.reject(this.error);
+    }
+
+    return Promise.resolve(this.result);
+  }
+
+  get<T extends Object>(identifier: string): Promise<T | null> {
+    this.identifier = identifier;
+
+    if (this.error) {
+      return Promise.reject(this.error);
+    }
+
+    if (this.result) {
+      return Promise.resolve(this.result);
+    }
+
+    return Promise.reject(new Error('Result not implemented.'));
+  }
+
+  find<T extends Object>(query: string | Object): Promise<T[]> {
     this.query = query;
-    this.database = database;
 
     if (this.error) {
       return Promise.reject(this.error);
@@ -75,10 +70,10 @@ class DatabaseSpy implements Database {
 
     if (this.result) {
       return Promise.resolve(this.result);
-    } else {
-      return Promise.reject(new Error('Simulation error'));
     }
+
+    return Promise.reject(new Error('Result not implemented.'));
   }
 }
 
-export default DatabaseSpy;
+export default ComicDatabaseSpy;
